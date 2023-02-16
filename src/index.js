@@ -9,7 +9,7 @@ import 'tachyons';
 
 
 import App from './containers/App';
-import registerServiceWorker from './registerServiceWorker';
+import * as serviceWorker from './service-worker';
 import { requestRobots, searchRobots } from './reducers'
 
 import './index.css';
@@ -33,6 +33,6 @@ root.render(
 //   </Provider>,
 //   document.getElementById('root')
 // );
-
-registerServiceWorker();
-serviceWorker.register()
+serviceWorker.register();
+// registerServiceWorker();
+// serviceWorker.register()
